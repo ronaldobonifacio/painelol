@@ -5,7 +5,7 @@ module.exports =
     async List(req, res)
     {
         try {
-            const  painel = await ModelPainel.findAll;
+            const  painel = await ModelPainel.findAll();
             return res.json(painel);
 
         } catch (erro) {
@@ -16,7 +16,7 @@ module.exports =
     async GetOne(req, res)
     {
         try {
-            const  painel = await ModelPainel.findByPk(req.body.ZW7_PEDPALM);
+            const  painel = await ModelPainel.findByPk(req.findAll());
             return res.json(painel);
 
         } catch (erro) {

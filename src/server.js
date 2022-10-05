@@ -6,4 +6,4 @@ const routes = require('./router');
 api.use(express.json());
 api.use(routes);
 
-api.listen(3033);
+api.listen(3000);

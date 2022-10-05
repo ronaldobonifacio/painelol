@@ -5,4 +5,4 @@ const routes = express.Router();
 
 routes.get('/List',controllerPainel.List);
 
-module.exports = routes;
+module.exports = routes;     
